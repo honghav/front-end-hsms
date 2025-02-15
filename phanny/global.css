@@ -1,0 +1,58 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex; /* Flexbox layout for body */
+    min-height: 100vh; /* Ensure the body takes up the full viewport height */
+}
+
+/* Header/Sidebar styling */
+header {
+    display: flex;
+    background-color: #11117E;
+    border-radius: 15px;
+    color: white;
+    padding: 10px 0;
+    width: 200px; /* Fixed width for the sidebar */
+    height: 100vh; /* Full height of the viewport */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start; /* Align items to the top */
+    align-items: center; /* Center items horizontally */
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Space between items */
+    margin-top: 20px; /* Add some space from the top */
+}
+
+nav ul li {
+    width: 100%; /* Make each list item take the full width of the sidebar */
+    text-align: center; /* Center the text inside each list item */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px; /* Reduced font size for better readability */
+    font-weight: bold;
+    padding: 10px 20px; /* Add padding to make the links clickable over a larger area */
+    display: block; /* Make the link a block-level element */
+    border-radius: 5px; /* Rounded corners for the hover effect */
+}
+
+nav ul li a:hover {
+    background-color: #FFFFFF; /* White background on hover */
+    color: #000000; /* Black text on hover */
+}
