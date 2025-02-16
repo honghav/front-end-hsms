@@ -63,7 +63,6 @@ CREATE TABLE Schedule (
     sch_id INT PRIMARY KEY, 
     sch_grade INT, 
     sch_group INT, 
-
     sch_subject_id INT, 
     FOREIGN KEY (sch_subject_id) REFERENCES Subject(sub_id) 
 );
