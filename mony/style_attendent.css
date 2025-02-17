@@ -1,0 +1,79 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #003366;
+    color: white;
+    padding: 10px 15px;
+    font-size: 20px;
+}
+
+.back-btn {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile, .bell {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+main {
+    padding: 10px;
+}
+
+.attendent-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.attendent-card {
+    display: flex;
+    align-items: center;
+    background-color: #00a2e8;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    justify-content: space-between;
+}
+
+.attendent-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.attendents-info {
+    flex-grow: 1;
+    margin-left: 10px;
+    color: white;
+}
+
+.attendent-value {
+    width: 40px;
+    height: 40px;
+    background-color: #ffcccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
