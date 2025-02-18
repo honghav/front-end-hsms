@@ -21,11 +21,11 @@
     <?php 
         // html code for loop u need to create your own style 
         $card = '<div class="back_groud">
-                    <h1>Card Loop $a</h1>
+                    <h1>Card Loop</h1>
                 </div>';
         
         // call function loop for card
-        Loop_crd($card , 5);
+        Loop_card($card , 5);
     ?>
 
 </body>

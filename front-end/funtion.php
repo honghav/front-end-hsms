@@ -2,14 +2,16 @@
 
 <?php
 // use for loop our card 
-function Loop_crd($div , $n){
+function Loop_card($div , $n){
         
-        $i = 0;
-        while($i <= $n){
-            print($div);
-            $i++;
-        }
-
+        if($n>= 0 ){
+            while($i = $n){
+                print($div);
+                $i++;
+            }
+        }else{
+            print("the card is empty");
+        }      
     }
 
 // hader of our project the agrument is the title if 
@@ -24,6 +26,10 @@ function Loop_crd($div , $n){
                 
         </head>
         <?php
+    }
+
+    function navbar($title){
+        
     }
 
 ?>
