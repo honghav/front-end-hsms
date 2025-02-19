@@ -48,6 +48,54 @@
             border-bottom-left-radius: 220px;
         }
 
+/* report card */
+        .report-container{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .report-card{
+            background-color: white;
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            padding: 10px;
+        }
+        .report-card div{
+            font-size: 24px;
+            font-weight: bold;
+            color: #003366;
+        }
+        .report-card p{
+            color: #666;
+            font-size: 14px;
+        }
+/* selection card */
+        .selection-cards{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .selection-card{
+            background-color: white;
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            padding: 10px;
+        }
+        .selection-card-icon{
+            font-size: 24px;
+            color: #003366;
+        }
+        .selection-card-title{
+            color: #666;
+            font-size: 14px;
+        }
+
     </style>
 </head>
 <header>
@@ -60,8 +108,64 @@
         </div>
     </div>
 </header>
-    <div class="backgroup"></div>
+    
 <body>
+<div class="backgroup">
+    <div class="report-container">
+        <div class="report-card">
+            <p>Present</p><div>2</div>
+            <p>Absent</p><div>2</div>
+         
+        </div>
+        <div class="report-card">
+            <p>Score</p><div>2</div>
+            <p>Average</p><div>2</div>
+        
+        </div>
+        <div class="report-card">
+            <p>Lecture</p><div>2</div>
+            <p>Work</p><div>2</div>
+            
+        </div>
+        
+    </div>
+</div>
+<!-- selection card -->
+
+<div class="selection-cards">
+    <div class="selection-card">
+        <div class="selection-card-icon">
+            <i class="fas fa-book"></i>
+        </div>
+        <div class="selection-card-title">
+            <h3>Course</h3>
+        </div>
+    </div>
+    <div class="selection-card">
+        <div class="selection-card-icon">
+            <i class="fas fa-user-friends"></i>
+        </div>
+        <div class="selection-card-title">
+            <h3>All Attendances</h3>
+        </div>
+    </div>
+    <div class="selection-card">
+        <div class="selection-card-icon">
+            <i class="fas fa-clipboard-list"></i>
+        </div>
+        <div class="selection-card-title">
+            <h3>Top student</h3>
+        </div>
+    </div>
+    <div class="selection-card">
+        <div class="selection-card-icon">
+            <i class="fas fa-graduation-cap"></i>
+        </div>
+        <div class="selection-card-title">
+            <h3>Score</h3>
+        </div>
+    </div>
+</div>
 
     
 </body>
