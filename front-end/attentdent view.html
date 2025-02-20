@@ -1,29 +1,15 @@
 
-
-<?php
-// use for loop our card 
-function Loop_card($div , $n){
-        
-        if($n>= 0 ){
-            while($i = $n){
-                print($div);
-                $i++;
-            }
-        }else{
-            print("the card is empty");
-        }      
-    }
-
-// hader of our project the agrument is the title if 
-    function Headerview($title){
-        ?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php $title ?></title>
+    <title>Your Score</title>
+    <!-- <link rel="stylesheet" href="style_attendent.css"> -->
+    <!-- <script defer src="script_att.js"></script> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <style>    
+    <style>
+        
         header{
             background-color: gray;
             /* height: 100%; */
@@ -58,12 +44,63 @@ function Loop_card($div , $n){
         color: white;
         cursor: pointer;
         }
+/* end of style of navbar */
+
+        main {
+            padding: 10px;
+        }
+
+        .attendent-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            }
+
+        .attendent-card {
+            display: flex;
+            width: 	 400px;
+            align-items: center;
+            background-color: #00a2e8;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            justify-content: space-between;
+            margin: 3px;
+        }
+
+        .attendent-card img {
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+        }
+
+        .attendents-info {
+            flex-grow: 1;
+            margin-left: 10px;
+            color: white;
+        }
+
+        .attendent-value {
+            width: 50px;
+            height: 60px;
+            margin: 15px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            border: solid 1px black;
+        }
+
     </style>
 </head>
+<body>
     <header>
         <div class="nav">
             <button class="back-btn">&#x21A9;</button>
-            <h1><?php print($title); ?></h1>
+            <h1>ALL Attentdent</h1>
             <div class="icons">
                 <!-- notivi icon -->
             <div class="not_btn"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
@@ -80,11 +117,32 @@ function Loop_card($div , $n){
             </div>
         </div>
     </header>
-        <?php
-    }
+    <main>
+        <div class="attendent-list">
+            <div class="attendent-card">
+                <img src="" alt="Avatar">
+                <div class="attendents-info">
+                    <p style="font-size: 24px;">Math</p>
+                    <p style="font-size: 12px;">2025-02-16</p>
+                </div>
+                <div class="attendent-value" >0</div>
+            </div>
+            
+        </div>
 
-    function navbar($title){
+        <div class="attendent-list">
+            <div class="attendent-card">
+                <img src="" alt="Avatar">
+                <div class="attendents-info">
+                    <p style="font-size: 24px;">Math</p>
+                    <p style="font-size: 12px;">2025-02-16</p>
+                </div>
+                <div class="attendent-value" >0</div>
+            </div>
+            
+        </div>
+
         
-    }
-
-?>
+    </main>
+</body>
+</html>

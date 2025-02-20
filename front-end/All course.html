@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Score</title>
+    <!-- <link rel="stylesheet" href="style_attendent.css"> -->
+    <!-- <script defer src="script_att.js"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        
+        header{
+            background-color: gray;
+            /* height: 100%; */
+            width: 440px;
+        }
+        .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #003366;
+        color: white;
+        /* padding: 10px 15px; */
+        font-size: 10px;
+        height: 50px;
+        width: 100%;
+
+        }
+        .icons {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-right: 5px;
+            }
+        .profile, .bell {
+        font-size: 24px;
+        cursor: pointer;
+        }
+        .back-btn {
+        font-size: 34px;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        }
+
+.icons {
+    display: flex;
+    gap: 15px;
+}
+
+.container {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.course-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.course-image {
+    position: relative;
+}
+
+.course-image img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: red;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.course-info {
+    padding: 10px;
+    background-color: #00a2ff;
+    color: white;
+}
+
+.course-info h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.course-info p {
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <button class="back-btn">&#x21A9;</button>
+            <h1>ALL Attentdent</h1>
+            <div class="icons">
+                <!-- notivi icon -->
+            <div class="not_btn"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
+            </svg>
+            </div>
+            <!-- profile icon -->
+            <div class="pro_btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                </svg>
+            </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <h2>Subjects</h2>
+        <div class="course-grid">
+            <div class="course-card">
+                <div class="course-image">
+                    <img src="math.jpg" alt="Math Course">
+                    <!-- <span class="badge">គណិតវិទ្យា ១២</span> -->
+                </div>
+                <div class="course-info">
+                    <h3>MATH</h3>
+                    <p>Teacher: Thao Sukvuth</p>
+                    <p>Status: Active / None</p>
+                </div>
+            </div>
+            
+            <!-- Repeat this course card for other courses -->
+            <div class="course-card">
+                <div class="course-image">
+                    <img src="math.jpg" alt="Math Course">
+                    <!-- <span class="badge">គណិតវិទ្យា ១២</span> -->
+                </div>
+                <div class="course-info">
+                    <h3>MATH</h3>
+                    <p>Teacher: Thao Sukvuth</p>
+                    <p>Status: Active / None</p>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-image">
+                    <img src="math.jpg" alt="Math Course">
+                    <!-- <span class="badge">គណិតវិទ្យា ១២</span> -->
+                </div>
+                <div class="course-info">
+                    <h3>MATH</h3>
+                    <p>Teacher: Thao Sukvuth</p>
+                    <p>Status: Active / None</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
