@@ -40,7 +40,7 @@ create table admin(
 
 create table subjects(
     sub_id int primary key,
-    sub_name int primary key
+    sub_name VARCHAR(255) not null,
 );
 create table courses (
     cou_id int primary key,
