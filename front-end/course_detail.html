@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khmer Attendance</title>
+    <link rel="stylesheet" href="course_details.css">
+</head>
+<body>
+<nav class="navbar">
+    <button class="back-btn">&#x2190;</button>
+    <h1>Khmer</h1>
+    <div class="icons">
+        <span class="bell">&#128276;</span>
+        <span class="profile">&#128100;</span>
+    </div>
+</nav>
+
+<div class="container">
+    <img src="image/khmer.jpg.crdownload" alt="Khmer Book Cover" class="book-cover">
+    <div class="buttons">
+        <button class="active">Attendance</button>
+        <button>Lecture</button>
+        <button>Homework</button>
+    </div>
+    <input type="text" placeholder="Enter code" class="input-box">
+    <h3 >See all</h3>
+    <div class="subject-list">
+        <div class="subject-item">
+            <img src="image/math12.jpg" alt="Subject">
+            <div>
+                <h3>Subject</h3>
+                <p>Date:</p>
+            </div>
+            <button class="toggle-btn"></button>
+        </div>
+        <div class="subject-item">
+            <img src="image/math12.jpg" alt="Subject">
+            <div>
+                <h3>Subject</h3>
+                <p>Date:</p>
+            </div>
+            <button class="toggle-btn"></button>
+        </div>
+        <div class="subject-item">
+            <img src="image/math12.jpg" alt="Subject">
+            <div>
+                <h3>Subject</h3>
+                <p>Date:</p>
+            </div>
+            <button class="toggle-btn"></button>
+        </div>
+        <div class="subject-item">
+            <img src="image/math12.jpg" alt="Subject">
+            <div>
+                <h3>Subject</h3>
+                <p>Date:</p>
+            </div>
+            <button class="toggle-btn"></button>
+        </div>
+        <div class="subject-item">
+            <img src="image/math12.jpg" alt="Subject">
+            <div>
+                <h3>Subject</h3>
+                <p>Date:</p>
+            </div>
+            <button class="toggle-btn"></button>
+        </div>
+        <div class="subject-item">
+            <img src="image/math12.jpg" alt="Subject">
+            <div>
+                <h3>Subject</h3>
+                <p>Date:</p>
+            </div>
+            <button class="toggle-btn"></button>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll('.toggle-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            button.classList.toggle('active');
+            button.style.background = button.classList.contains('active') ? 'green' : 'pink';
+        });
+    });
+</script>
+</body>
+</html>

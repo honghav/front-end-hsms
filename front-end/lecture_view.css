@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #003366;
+    color: white;
+    padding: 10px 20px;
+}
+.back-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.icons span {
+    margin: 0 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.container {
+    padding: 20px;
+}
+.lecture-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.pdf-viewer {
+    width: 80%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
