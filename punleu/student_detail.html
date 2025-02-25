@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Detail</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 90%;
+            max-width: 400px;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #00ff50;
+            color: black;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            position: relative;
+        }
+        .header .back,
+        .header .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .header .previous { 
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .header .back { left: 15px; }
+        .header .next { right: 15px; }
+        
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            background-color: navy;
+            border-radius: 10px;
+            margin: 0 auto 20px;
+        }
+        .info {
+            text-align: left;
+            font-size: 16px;
+        }
+        .info p {
+            margin-bottom: 8px;
+        }
+        .info p span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <span class="back">&larr;</span>
+            Student detail
+            <span class="previous">&lt;</span>
+            <span class="next">&gt;</span>
+        </div>
+        <div class="content">
+            <div class="profile-pic"></div>
+            <div class="info">
+                <p><span>Name:</span> Din Daranika</p>
+                <p><span>ID:</span> 0298FD</p>
+                <p><span>Grade:</span> 12A</p>
+                <p><span>Gender:</span> Female</p>
+                <p><span>Phone:</span> +885 903 873 232</p>
+                <p><span>Date of Birth:</span> 2008-10-23</p>
+                <p><span>Address:</span> Teuk Thla</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
