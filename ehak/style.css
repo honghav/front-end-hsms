@@ -317,3 +317,48 @@
     flex-direction: column;
     gap: 5px;
 }
+
+/* teacher */
+
+.info-teacher {
+    padding: 15px;
+    height: auto;
+    background-color: #ffff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.teacher-details h4{
+    color: #11117E;
+}
+
+.teacher-details span {
+    color: #999fa6;
+}
+
+.teacher-details p {
+    color: #11117E;
+}
+
+/* scheldule file */
+
+.profile-section {
+    background: #ffff;
+    border-radius: 10px;
+    height: 100px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+._scheldule {
+    background-color: #f7f7f7;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 10px 0 10px 0;
+}
+
+._scheldule h4{
+    color: #11117E;
+}
+
+.table-responsive {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
